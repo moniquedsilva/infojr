@@ -1,28 +1,20 @@
-# Adonis API application
+# Atividade Adonis
 
-This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
+Olá Trainee,
 
-1. Bodyparser
-2. Authentication
-3. CORS
-4. Lucid ORM
-5. Migrations and seeds
+Ficamos felizes com o seu desempenho até aqui e agora entregaremos uma última atividade técnica do nosso processo:
 
-## Setup
+Você deverá criar uma API de um CRUD de filmes
 
-Use the adonis command to install the blueprint
+- Deverá ser usado adonis para desenvolvimento da API
+- Na busca, a api deverá fazer paginação dos filmes, pois, caso haja vários filmes você não precisa retornar todos ao mesmo tempo.
+- Deverá ser possível pesquisar um filme por nome e a API deverá retornar todos os filmes que contenham aquele nome
+- Deverá ser possível incluir um filme, preenchendo todos os parâmetros abaixo (exceto o ID que será autoincrementável)
 
-```bash
-adonis new yardstick --api-only
-```
+Filme deverá ter:
 
-or manually clone the repo and then run `npm install`.
-
-
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
-```
+- Id
+- Nome
+- Data de lançamento
+- Gênero (Ação, terror, drama, suspense)
+- Descrição
