@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffbfe4;
+  background-image: url(./imagens/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.conteiner {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  min-height: 15vh;
+  min-width: 100%;
+  background-color: #a0e7e5;
+  box-shadow: 1px 1px 10px rgb(190, 190, 190);
+}
+
+.title {
+  margin: 40px auto;
+  width: 20rem;
+}
+.title a {
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #2d2e2e;
+}
+
+.content {
+  margin-top: 30px;
+  min-height: 70vh;
+  padding: 25px;
+  width: 60vw;
+  box-shadow: 1px 1px 20px rgb(190, 190, 190);
+  border-radius: 5px;
+  background: #ffffff;
+}
+.quiz {
+  margin: 0 auto;
+  width: 45rem;
+}
+
+.quiz h2 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #716969;
+}
+
+.content p,
+form {
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5rem;
+  color: rgb(34, 34, 34);
+}
+
+.content form input {
+  margin-left: 10px;
+}
+
+#button {
+  width: 80px;
+  height: 30px;
+}
+
+.copy {
+  margin-top: auto;
+  min-width: 100%;
+  padding-right: 15px;
+  text-align: right;
+}
+.copy h5 {
+  font-family: "Montserrat", sans-serif;
+  color: #2d2e2e;
+}
+
+div#ResultadoFinal {
+  width: 350px;
+  margin: auto;
+  border-radius: 5%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+img#ImagemResultado {
+  width: 300px;
+  margin-left: 12.5px;
+  border-radius: 5%;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Hunter x Hunter Quiz</title>
+  </head>
+  <body>
+    <main class="conteiner">
+      <header class="banner">
+        <div class="title">
+          <a href="./index.html" title="Quiz x Quiz">Quiz x Quiz (🔥)</a>
+        </div>
+      </header>
+      <div class="content">
+        <div class="quiz">
+          <h2>Quiz: Hunter x Hunter</h2>
+          <p>
+            O Quiz é composto de 5 perguntas. O nível das perguntas varia de
+            fácil a médio. Respostas corretas valem 1 ponto e erradas não geram
+            pontuação.
+          </p>
+          <br />
+          <form action="" id="FormQuiz">
+            <label for="name">Nome</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Insira seu nome"
+            />
+            <br />
+            <br />
+            <p id="quest1">
+              1) Qual é o nome do personagem que vem de uma família de
+              assassinos profissionais?
+            </p>
+            <input type="text" name="p1" id="p1" />
+            <p id="Resp1" style="color: #57eb4b"></p>
+            <br />
+            <p>2) Qual a cor predominante da roupa de Gon?</p>
+            <div id="quest2">
+              <input type="radio" name="p2" id="Verde" value="Verde" />
+              <label for="Verde"></label>Verde
+              <input type="radio" name="p2" id="Vermelho" value="Vermelho" />
+              <label for="Vermelho">Vermelho</label>
+              <input type="radio" name="p2" id="Azul" value="Azul" />
+              <label for="Azul">Azul</label>
+              <input type="radio" name="p2" id="Preto" value="Preto" />
+              <label for="Preto">Preto</label>
+              <br />
+              <br />
+              <p id="Resp2" style="color: #57eb4b"></p>
+            </div>
+            <p>3) Qual desses arcos fazem parte de Hunter x Hunter</p>
+            <div id="quest3">
+              <input
+                type="checkbox"
+                name="p3-Hunter"
+                id="Hunter"
+                value="Hunter"
+              />
+              <label for="Hunter">Exame Hunter</label>
+              <input type="checkbox" name="p3-Wano" id="Wano" value="Wano" />
+              <label for="Wano">Wano</label>
+              <input
+                type="checkbox"
+                name="p3-Quimera"
+                id="Quimera"
+                value="Quimera"
+              />
+              <label for="Quimera">Formigas Quimera</label>
+              <input
+                type="checkbox"
+                name="p3-Celestial"
+                id="Celestial"
+                value="Celestial"
+              />
+              <label for="Celestial">Torre Celestial</label>
+              <br />
+              <br />
+              <p id="Resp3" style="color: #57eb4b"></p>
+            </div>
+            <p>
+              4) Quais são os 3 tipos de "Nen" mais fortes que Gon pode
+              desenvolver?
+            </p>
+            <div id="quest4">
+              <input
+                type="checkbox"
+                name="p4-reforco"
+                id="Reforco"
+                value="Reforco"
+              />
+              <label for="Reforco">Reforço</label>
+              <input
+                type="checkbox"
+                name="p4-transformacao"
+                id="Transformacao"
+                value="Transformacao"
+              />
+              <label for="Transformacao">Transformação</label>
+              <input
+                type="checkbox"
+                name="p4-especializacao"
+                id="Especializacao"
+                value="Especializacao"
+              />
+              <label for="Especializacao">Especialização</label>
+              <input
+                type="checkbox"
+                name="p4-emissao"
+                id="Emissao"
+                value="Emissao"
+              />
+              <label for="Emissao">Emissão</label>
+              <br />
+              <br />
+              <p id="Resp4" style="color: #57eb4b"></p>
+            </div>
+            <p>5) Qual o nome do autor de Hunter x Hunter?</p>
+            <div id="quest5">
+              <input type="radio" name="p5" id="Oda" value="Oda" />
+              <label for="Oda">Eiichiro Oda</label>
+              <input type="radio" name="p5" id="Isayama" value="Isayama" />
+              <label for="Isayama">Hajime Isayama</label>
+              <input type="radio" name="p5" id="Togashi" value="Togashi" />
+              <label for="Togashi">Yoshihiro Togashi</label>
+              <input type="radio" name="p5" id="Horikoshi" value="Horikoshi" />
+              <label for="Horikoshi">Kohei Horikoshi</label>
+              <br />
+              <br />
+              <p id="Resp5" style="color: #57eb4b"></p>
+            </div>
+            <input type="button" value="Enviar" id="button" />
+            <br />
+            <br />
+            <div id="ResultadoFinal"></div>
+          </form>
+        </div>
+      </div>
+      <footer class="copy">
+        <h5>Quiz x Quiz &copy; 2021</h5>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
