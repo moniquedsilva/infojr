@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Mega&family=Roboto&family=Source+Sans+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.grid-conteiner {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "header header header"
+    "content content content"
+    "footer footer footer";
+}
+
+/*HEADER*/
+.header-area {
+  grid-area: header;
+  position: relative;
+  min-height: 10vh;
+  min-width: 100vw;
+  background: #f9f8e4;
+}
+#header-title {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  font: bold 2.5em "Lexend Mega", sans-serif;
+  text-transform: lowercase;
+  text-decoration: none;
+  letter-spacing: -7px;
+  color: #1e1e1d;
+}
+
+/*NAVBAR*/
+.nav-area {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+}
+.nav-link {
+  min-width: 10vw;
+  min-height: 10vh;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font: bold 1em "Source Sans Pro", sans-serif;
+  color: #1e1e1d;
+  background: #f9f8e4;
+}
+.nav-link:hover {
+  background: #1e1e1d;
+  color: #f9f8e4;
+}
+
+/*SECTION*/
+.content-area {
+  grid-area: content;
+  min-height: 80vh;
+  background: #1e1e1d url(./imagens/background.jpg) top right no-repeat;
+  display: flex;
+  align-items: center;
+}
+.content-box {
+  width: 40em;
+  min-height: 40vh;
+  margin: 30px 80px;
+  padding: 20px;
+  border-radius: 6px;
+}
+#content-title {
+  margin-bottom: 20px;
+  font: bold 1.5em "Roboto", sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+  color: #f2f1e9;
+}
+#content-text {
+  font: 1em/1.4em "Roboto", sans-serif;
+  text-align: justify;
+  color: #f2f1e9;
+}
+.img {
+  margin: 0 50px;
+  border-radius: 10px;
+}
+#button-form,
+#button_quiz {
+  width: 80px;
+  height: 30px;
+  font-family: "Roboto", sans-serif;
+}
+#galeria_imagens {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.img_galeria {
+  margin: 10px;
+  width: 300px;
+  height: 170px;
+}
+.img_galeria:hover {
+  width: 500px;
+  height: auto;
+}
+
+/*FOOTER*/
+.footer-area {
+  grid-area: footer;
+  min-height: 10vh;
+  background: #f9f8e4;
+}
+#footer-title {
+  width: 22em;
+  margin: 2em auto;
+  font: bold 0.7em "Lexend Mega", sans-serif;
+  color: #1e1e1d;
+}
+#footer-title a {
+  text-decoration: none;
+  color: #1e1e1d;
+}
+#footer-title a:hover {
+  border-bottom: 1px solid #1e1e1d;
+}
+
+/*Quiz*/
+div#ResultadoFinal {
+  width: 350px;
+  margin: auto;
+  border-radius: 5%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+img#ImagemResultado {
+  width: 300px;
+  margin-left: 12.5px;
+  border-radius: 5%;
+}
