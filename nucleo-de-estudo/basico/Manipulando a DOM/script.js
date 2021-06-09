@@ -13,7 +13,6 @@
   4) Adicionar um novo parágrafo
   5) Mudar o link dentro do href e inclua o atributo title="Novo Link" 
   6) Mudar a cor de fundo da body
-
   - Observe que no arquivo HTML cada etapa possui seu respectivo botão, 
   o que significa que as modificações serão acionadas através do click (evento) no botão, 
   então realize todas as alterações necessárias para que o botão se torne funcional.
@@ -72,4 +71,3 @@ botaoBackground.addEventListener('click', function handleClick(){
   let background = document.body
   background.style.backgroundColor = 'beige'
 })
-
