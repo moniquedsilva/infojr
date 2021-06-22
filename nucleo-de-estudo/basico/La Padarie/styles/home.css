@@ -26,23 +26,69 @@
 }
 
 .main-area {
-  width: 60vw;
+  width: 80vw;
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   gap: 1rem;
 }
 
 .rules {
-  width: 30%;
+  width: 20vw;
   background-color: var(--clr-containers);
   padding: 1.2rem;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
-ul li {
+ul {
+  list-style-type: none;
+}
+
+ul>li {
+  position: relative;
+  padding-left: 1rem;
   font-size: 1.2rem;
-  list-style-position: inside;
+  font-weight: bold;
+}
+
+ul>li:before {
+  content: "•";
+  font-size: 1.3rem;
+  font-weight: bolder;
+  position: absolute;
+  left: 0;
 }
 
 .queue {
-  width: 70%;
+  width: 52vw;
+  padding: 0.7rem;
   background-color: var(--clr-containers);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.queue>h3 {
+  margin: 0.5rem;
+}
+
+h3 {
+  color: var(--clr-title);
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.client-area {
+  margin: 1rem 0.5rem;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.your-name {
+  background-color: #dddddd;
+  border: 1px dashed black;
+  border-radius: 3px;
+  padding: 0.5rem;
 }
