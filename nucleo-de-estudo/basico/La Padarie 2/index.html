@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Podkova&display=swap"
+      rel="stylesheet"
+    />
+    <title>La Padarie</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="bar"></div>
+      <header class="header-area">
+        <img src="./assets/logo.svg" />
+        <h2>Quem quer pão?</h2>
+      </header>
+      <main class="main-area">
+        <section class="rules">
+          <h3>Regras</h3>
+          <ul>
+            <li>Ter entre 3 e 180 anos</li>
+            <li>Tem que gostar de pão</li>
+            <li>Tem que ter assistido a capacitação</li>
+          </ul>
+        </section>
+        <section class="queue">
+          <h3>Fila</h3>
+          <div class="client-area">
+            <p class="name"></p>
+            <span class="amount"></span>
+          </div>
+          <form>
+            <input type="text" id="name" placeholder="DIGITE SEU NOME..." />
+            <input type="number" id="paes-amount" placeholder="Quantidade" />
+            <button type="button" id="btn">Quero Pão</button>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
