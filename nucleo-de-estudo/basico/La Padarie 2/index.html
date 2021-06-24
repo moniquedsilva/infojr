@@ -35,15 +35,26 @@
             <p class="name"></p>
             <span class="amount"></span>
           </div>
-          <form class="form-area">
+          <form class="form-area" onsubmit="submitForm(event)">
             <article class="input-area">
-              <input type="text" id="name" placeholder="DIGITE SEU NOME..." />
-              <input type="number" id="paes-amount" placeholder="Quantidade" />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="DIGITE SEU NOME..."
+              />
+              <input
+                type="number"
+                id="paes-amount"
+                name="amount"
+                placeholder="Quantidade"
+              />
             </article>
-            <button type="button" id="btn">Quero Pão</button>
+            <button type="submit" value="input" id="btn">Quero Pão</button>
           </form>
         </section>
       </main>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
