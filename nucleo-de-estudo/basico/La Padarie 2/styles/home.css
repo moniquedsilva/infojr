@@ -15,7 +15,7 @@
 }
 
 .header-area {
-  width: 40vw;
+  width: 43vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,6 +96,54 @@ h3 {
   padding: 0.5rem;
 }
 
+.form-area{
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+.input-area {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#name {
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  color: black;
+  background-color: #e2e2e2;
+}
+
+#name:focus {
+  outline: none;
+}
+
+#paes-amount {
+  font-size: 1rem;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-weight: bold;
+  color: black;
+  background-color: #e2e2e2;
+}
+#paes-amount:focus {
+  outline: none;
+}
+#btn {
+  background-color: var(--background);
+  border: 4px solid var(--clr-title);
+  border-radius: 3px;
+  width: 6vw;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--clr-title);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .header-area {
     width: 60vw;
@@ -115,6 +163,10 @@ h3 {
 
   .queue {
     width: 60%;
+  }
+
+  #btn {
+    width: 10vw;
   }
 }
 
@@ -137,5 +189,11 @@ h3 {
 
   .queue {
     width: 100%;
+  }
+  .form-area{
+    gap: 0;
+  }
+  #btn {
+    width: 20vw;
   }
 }
