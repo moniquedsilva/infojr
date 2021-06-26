@@ -1,4 +1,4 @@
-var queue = [
+let queue = [
   {
     name: "Antonio figueiredo",
     amount: 3,
@@ -17,14 +17,47 @@ var queue = [
   },
 ];
 
-// let btn = document.getElementById("btn");
-// btn.addEventListener("click", handleClick);
+let setClient = document.querySelector(".client-area");
 
-// function handleClick() {}
+function people(name, amount) {
+  let newClient = document.createElement("div");
+  let personName = document.createElement("p");
+  let personAmount = document.createElement("span");
 
-function submitForm(event) {
-  event.preventDefault();
+  personName.innerHTML = name;
+  personAmount.innerHTML = "Quantidade: " + amount;
 
-  console.log(event.target["name"].value);
-  console.log(event.target["amount"].value);
+  personName.setAttribute("class", "name");
+  personAmount.setAttribute("class", "amount");
+  newClient.setAttribute("class", "client-area");
+
+  newClient.appendChild(personName);
+  newClient.appendChild(personAmount);
+  setClient.appendChild(newClient);
 }
+
+function load() {
+  for (let index = 0; index < queue.length; index++) {
+    people(queue[index].name, queue[index].amount);
+  }
+}
+
+onload = load();
+
+document.addEventListener("submit", function (e) {
+  e.preventDefault();
+  let getName = document.getElementById("name").value;
+  let getAmount = document.getElementById("paes-amount").value;
+  queue.push({ name: getName, amount: getAmount });
+  people(getName, getAmount);
+});
+
+function timer() {
+  queue.shift();
+  while (setClient.hasChildNodes()) {
+    setClient.removeChild(setClient.firstChild);
+  }
+  load();
+}
+
+setInterval(timer, 10000);

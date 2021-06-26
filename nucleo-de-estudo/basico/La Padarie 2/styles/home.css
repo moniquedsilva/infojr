@@ -36,7 +36,7 @@
 }
 
 .rules {
-  width: 25vw;
+  width: 20vw;
   background-color: var(--clr-containers);
   padding: 1.2rem;
   padding-right: 1.7rem;
@@ -63,7 +63,7 @@ ul>li:before {
 }
 
 .queue {
-  width: 52vw;
+  width: 45vw;
   padding: 0.7rem;
   background-color: var(--clr-containers);
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);

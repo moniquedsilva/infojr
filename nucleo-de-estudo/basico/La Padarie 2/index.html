@@ -35,22 +35,26 @@
             <p class="name"></p>
             <span class="amount"></span>
           </div>
-          <form class="form-area" onsubmit="submitForm(event)">
+          <form class="form-area">
             <article class="input-area">
               <input
                 type="text"
                 id="name"
                 name="name"
+                required
+                pattern="[a-zA-Z]+"
+                title="Deve conter apenas letras"
                 placeholder="DIGITE SEU NOME..."
               />
               <input
                 type="number"
                 id="paes-amount"
                 name="amount"
+                required
                 placeholder="Quantidade"
               />
             </article>
-            <button type="submit" value="input" id="btn">Quero Pão</button>
+            <button type="submit" id="btn">Quero Pão</button>
           </form>
         </section>
       </main>
