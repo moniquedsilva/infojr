@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  --background: #F8F7FF;
+  --clr-bar: #553E4E;
+  --clr-text: #3A3238;
+  --clr-title: #fff;
+}
+
+body {
+  background-color: var(--background);
+  height: 100vh;
+  width: 100vw;
+}
+
+body,
+input{
+  font-family: 'Raleway',
+  sans-serif;
+}

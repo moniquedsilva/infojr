@@ -1,0 +1,43 @@
+const url =
+  "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page=1";
+const IMGPATH = "https://image.tmdb.org/t/p/w1280";
+const SEARCHAPI =
+  "https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=";
+
+const main = document.querySelector(".movie-area");
+const form = document.querySelector(".form");
+const search = document.querySelector(".search");
+
+showMovies(url);
+function showMovies(url) {
+  fetch(url)
+    .then((res) => res.json())
+    .then(function (data) {
+      console.log(data.results);
+      data.results.forEach((element) => {
+        const movie = document.createElement("div");
+        const image = document.createElement("img");
+        const text = document.createElement("h2");
+
+        movie.setAttribute("class", "movie-list");
+        image.setAttribute("class", "img-list");
+        text.innerHTML = `${element.title}`;
+        image.src = IMGPATH + element.poster_path;
+        movie.appendChild(image);
+        movie.appendChild(text);
+        main.appendChild(movie);
+      });
+    });
+}
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  main.innerHTML = "";
+
+  const searchTerm = search.value;
+
+  if (searchTerm) {
+    showMovies(SEARCHAPI + searchTerm);
+    search.value = "";
+  }
+});
