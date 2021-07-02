@@ -1,0 +1,103 @@
+:root {
+  --clr-primary-1: #fffee7;
+  --clr-primary-2: #ffffff;
+  --clr-primary-3: #e0afa0;
+  --clr-primary-4: #191802;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr-primary-1);
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--clr-primary-4);
+}
+
+.header-space {
+  min-height: 2vh;
+  min-width: 100%;
+  margin-bottom: 2rem;
+  background-color: var(--clr-primary-3);
+}
+
+.main-box {
+  min-width: 90%;
+  min-height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-box {
+  background-color: var(--clr-primary-2);
+  width: 50vw;
+  min-height: 50vh;
+  padding: 2em;
+  box-shadow: 0px 6px 10px #0000004d;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.section-box h2 {
+  padding-bottom: 2em;
+}
+
+.selection-form {
+  line-height: 2.5em;
+  margin-bottom: 3rem;
+}
+
+.paragraph {
+  text-align: justify;
+  margin-bottom: 1.25rem;
+}
+
+#warning {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.text {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+p::first-letter {
+  text-transform: capitalize;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0 1rem;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--clr-primary-3);
+  color: var(--clr-primary-4);
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1rem;
+  transition: all 0.3s linear;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--clr-primary-4);
+  color: var(--clr-primary-3);
+}
+
+input {
+  width: 2.5rem;
+}
+
+label {
+  margin: 0 1rem;
+  padding: 0.2rem;
+}
