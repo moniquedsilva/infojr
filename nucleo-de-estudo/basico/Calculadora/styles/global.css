@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-black: #2A2D34;
+  --clr-green: #009B72;
+  --clr-orange: #F26430;
+  --clr-white: #F0F7EE;
+  --clr-blue: #197BBD;
+  --clr-grey: #595758;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto',
+  sans-serif;
+  background-color: var(--clr-white);
+}
+
